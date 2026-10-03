@@ -34,7 +34,7 @@ The project was developed collaboratively as a university project, with responsi
 |                          Contributor                          | Main Responsibilities                                                                             |
 | :-----------------------------------------------------------: | ------------------------------------------------------------------------------------------------- |
 |                        **[Ali Vafaeipour]**                        | Control circuit design, PCB design, PCB fabrication, component assembly, LCD & keypad programming |
-| **[Amirhossein Arzi](https://github.com/[Samirarzi])** | Embedded software development, power electronics design, and power-section implementation         |
+| **[Amirhossein Arzi](https://github.com/Samirarzi)** | Embedded software development, power electronics design, and power-section implementation         |
 
 </p>
 
