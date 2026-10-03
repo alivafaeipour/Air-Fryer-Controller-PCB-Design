@@ -8,31 +8,35 @@
   <i>AI-generated project visualization — not a photograph of the actual project.</i>
 </p>
 
-An STM32-based air fryer controller featuring PID temperature control and a custom PCB designed in Altium Designer.
-
-This repository documents the hardware development process, including PCB design, PCB fabrication, component assembly, STM32 configuration, and the final assembled board.
-
-> **Note:** This project was originally developed as a university project by a colleague. My contribution focused on PCB design, PCB fabrication, component assembly, and hardware development.
+An STM32-based air fryer controller featuring PID temperature control, a custom control board designed in Altium Designer, and a power electronics section developed as part of the overall system.
 
 ---
 
 ## Project Overview
 
-The project is an STM32-based air fryer control system designed to manage the cooking process using temperature feedback and PID control.
+This project is an STM32-based air fryer control system designed to manage the cooking process using temperature feedback and PID control.
 
-The hardware was developed around a custom-designed PCB, followed by physical PCB fabrication and component assembly.
+The system consists of:
 
-The main focus of this repository is the **hardware development and PCB design process**.
+* Control electronics
+* Power electronics
+* STM32-based embedded software
+* LCD and keypad user interface
 
-### Main Features
+The project was developed collaboratively as a university project, with responsibilities divided between control electronics, power electronics, PCB development, and software.
 
-* STM32-based control system
-* PID temperature control
-* Temperature feedback
-* Custom PCB design
-* PCB fabrication using chemical etching
-* Manual component assembly and soldering
-* Hardware prototyping and testing
+---
+
+## Project Collaboration
+
+<p align="center">
+
+|                          Contributor                          | Main Responsibilities                                                                             |
+| :-----------------------------------------------------------: | ------------------------------------------------------------------------------------------------- |
+|                        **[Ali Vafaeipour]**                        | Control circuit design, PCB design, PCB fabrication, component assembly, LCD & keypad programming |
+| **[Amirhossein Arzi](https://github.com/[GitHub Username])** | Embedded software development, power electronics design, and power-section implementation         |
+
+</p>
 
 ---
 
@@ -40,17 +44,31 @@ The main focus of this repository is the **hardware development and PCB design p
 
 My main contribution to the project included:
 
+* Control circuit design
 * PCB design using **Altium Designer**
-* Component placement
-* PCB routing
+* Component placement and PCB routing
 * PCB layout review
 * PCB preparation for fabrication
 * PCB fabrication using copper-clad board and chemical etching
 * Manual drilling and PCB preparation
 * Component soldering and assembly
-* Hardware inspection after assembly
+* LCD and keypad programming
+* Hardware testing and inspection
 
-The complete firmware source code, Gerber files, and original Altium project files are not included in this repository.
+My work focused primarily on the **control electronics and control-board development**.
+
+---
+
+## Collaborator's Contribution
+
+My collaborator was primarily responsible for:
+
+* Embedded software development
+* Main firmware development
+* Power electronics circuit design
+* Power-section development and implementation
+
+The project was therefore developed as a collaboration between **control electronics, power electronics, and embedded software**.
 
 ---
 
@@ -84,7 +102,9 @@ The complete firmware source code, Gerber files, and original Altium project fil
 
 ---
 
-## STM32 Configuration
+## STM32 & User Interface
+
+The project used an STM32 microcontroller and included an LCD and keypad interface for user interaction.
 
 The microcontroller configuration was prepared using **STM32CubeMX**.
 
@@ -92,7 +112,7 @@ The microcontroller configuration was prepared using **STM32CubeMX**.
   <img src="./Images/STM32CubeMX.png" alt="STM32CubeMX Configuration" width="900">
 </p>
 
-The CubeMX configuration is included to document the microcontroller setup used in the project.
+My contribution to the software side focused on the **LCD and keypad interface programming**.
 
 ---
 
@@ -100,23 +120,21 @@ The CubeMX configuration is included to document the microcontroller setup used 
 
 The PCB was physically fabricated using a copper-clad board and a chemical etching process.
 
-The fabrication process included:
+### Fabrication Process
 
 1. PCB layout preparation
-2. Transfer of the PCB pattern
+2. PCB pattern transfer
 3. Chemical etching
 4. Manual drilling
 5. Component placement
 6. Soldering and assembly
 7. Hardware inspection
 
-This process was used to convert the Altium PCB design into a functional physical prototype.
+This process converted the Altium PCB design into a functional physical prototype.
 
 ---
 
 ## Final Result
-
-The final assembled PCB is shown below.
 
 <p align="center">
   <img src="./Images/Final_Project_1.jpeg" alt="Final Assembled PCB - View 1" width="800">
@@ -130,15 +148,21 @@ The final assembled PCB is shown below.
 
 ## Tools & Technologies
 
-| Category             | Tool / Technology                    |
-| -------------------- | ------------------------------------ |
-| PCB Design           | Altium Designer                      |
-| MCU Configuration    | STM32CubeMX                          |
-| Microcontroller      | STM32                                |
-| Control Method       | PID Temperature Control              |
-| PCB Fabrication      | Copper-Clad Board + Chemical Etching |
-| Assembly             | Manual Soldering                     |
-| Hardware Development | PCB Design & Prototyping             |
+<p align="center">
+
+|       Category       | Tool / Technology                     |
+| :------------------: | ------------------------------------- |
+|      PCB Design      | Altium Designer                       |
+|   MCU Configuration  | STM32CubeMX                           |
+|    Microcontroller   | STM32                                 |
+|    Control Method    | PID Temperature Control               |
+|    User Interface    | LCD + Keypad                          |
+|      Programming     | Embedded C                            |
+|    PCB Fabrication   | Copper-Clad Board + Chemical Etching  |
+|       Assembly       | Manual Soldering                      |
+| Hardware Development | Control Electronics & PCB Prototyping |
+
+</p>
 
 ---
 
@@ -164,19 +188,34 @@ Air-Fryer-Controller-PCB/
 
 ## Project Scope
 
-This repository is intended as a **hardware development portfolio**.
+This repository is intended as a **hardware and embedded-systems portfolio project**.
 
-To keep the project focused on the hardware design process, the following files are intentionally not included:
+The following files are intentionally not included:
 
 * Complete firmware source code
 * Gerber files
 * Altium Designer source/project files
 * Manufacturing files
 
-The repository instead provides selected documentation and visual references showing the PCB design, fabrication, assembly, and final hardware result.
+The repository provides selected documentation and visual references showing the **control-board design, PCB fabrication, assembly, STM32 configuration, and final hardware result**.
+
+---
+
+## Collaboration
+
+This project was developed as a collaborative university project.
+
+The work was divided between:
+
+* Control electronics and PCB development
+* Power electronics
+* Embedded software
+* LCD and keypad interface development
+
+The repository highlights my specific contribution while acknowledging the collaborative nature of the project.
 
 ---
 
 ## Disclaimer
 
-This repository documents my contribution to a university project and is intended for portfolio and educational purposes.
+This repository documents my contribution to a collaborative university project and is intended for portfolio and educational purposes.
